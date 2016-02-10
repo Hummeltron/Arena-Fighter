@@ -1,0 +1,31 @@
+{
+  "name": "Arena-Fighter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "build-game":"node_modules/.bin/browserify -o app/public/bundle.js app/public/js/app.js",
+    "watch-game": "node_modules/.bin/watchify -o app/public/bundle.js app/public/js/app.js -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hummeltron/Arena-Fighter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hummeltron/Arena-Fighter/issues"
+  },
+  "homepage": "https://github.com/Hummeltron/Arena-Fighter#readme",
+  "dependencies": {
+    "backbone": "^1.2.3",
+    "browserify": "^13.0.0",
+    "express": "^4.13.4",
+    "jquery": "^2.2.0",
+    "lodash": "^4.3.0",
+    "socketio": "^1.0.0",
+    "watchify": "^3.7.0"
+  }
+}
