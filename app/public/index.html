@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Arena - Fighter</title>
-        <link rel='stylesheet' href='res/style.css' />
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Arena - Fighter</title>
+    <link rel='stylesheet' href='res/style.css' />
+</head>
+
+<body>
+    <div id='login-form'>
+        <label for='username'>Username</label>
+        <input type='text' id='username' />
+    </div>
+    <canvas id='stage' width="1200" height="900"></canvas>
     <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
     <script src='bundle.js'></script>
-    </body>
+</body>
+
 </html>
