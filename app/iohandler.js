@@ -35,7 +35,12 @@ let iohandler = function(socket) {
                 socketId: socket.id,
                 keys: keys,
                 x: 500,
-                y: 500
+                y: 500,
+                w: 20,
+                h: 20,
+                map:'cityMap',
+                jumping:false,
+                jumpcounter:0
             };
             socket.username = username;
         }
